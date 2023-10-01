@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<p>Click any of the following links:</p>
+
+
+<a id="newWindowLink" href="#" target="_blank">Opens in New</a> |
+<a id="selfLink" href="#" target="_self">Opens in Same</a> |
+<a id="parentLink" href="#" target="_parent">Opens in Parent</a> |
+<a id="bodyLink" href="#" target="_top">Opens in Body</a> |
+<a id="bodyLink" href="#" target="_top">Send email</a> |
+
+
+
+<script>
+  // Replace the href attribute values with your actual links
+  document.getElementById("newWindowLink").href = "window.open(this.href, '_blank', 'width=500,height=500'); return false;"
+  document.getElementById("selfLink").href = "file:///C:/Users/DEEPIKA/OneDrive/Documents/fs%20web/TASK3.HTML#";
+  document.getElementById("parentLink").href = "file:///C:/Users/DEEPIKA/OneDrive/Documents/fs%20web/TASK3.HTML#";
+  document.getElementById("bodyLink").href = "file:///C:/Users/DEEPIKA/OneDrive/Documents/fs%20web/TASK3.HTML#";
+  document.getElementById("emaillink").href = "mailto:youremail@example.com";
+
+  // Function to open an email link (replace with your email link)
+  function openEmail() {
+    window.location.href = "mailto:youremail@example.com";
+  }
+</script>
+
+</body>
+</html>
